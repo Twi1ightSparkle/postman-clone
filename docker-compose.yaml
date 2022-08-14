@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  postman_clone:
+    image: twilightsparkle/postman-clone:latest
+    restart: unless-stopped
+    container_name: postman_clone
+    ports:
+        - 8080:80
